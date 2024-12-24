@@ -19,3 +19,4 @@ APIcall('https://v2.jokeapi.dev/joke/Programming?format=txt').then(response=>{
 }).catch(error=>{
     console.error('API call failed:', error);
 });
+clearTimeout();
