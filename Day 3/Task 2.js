@@ -1,8 +1,14 @@
-function api(){
-    return fetch('https://v2.jokeapi.dev/joke/Programming?format=txt').then(response=>response.text())
-    .then(joke=>{
-        console.log(joke)
-    }).catch(error=>console.error('Error fetching joke:', error));
+
+function fetchPosts() {
+    return fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(response => response.json())
+        .then(posts => {
+            posts.forEach(post => {
+                console.log(`Title: ${post.title}, User ID: ${post.userId}`);
+            });
+        })
+        .catch(error => console.error('Error fetching posts:', error));
 }
 
-api();
+
+fetchPosts();
