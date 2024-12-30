@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Weather App</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s;
+        }
+        #weatherImage {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mini Weather App</h1>
+    <div>
+        <input type="text" id="locationInput" placeholder="Enter location">
+        <button id="fetchWeatherButton">Get Weather</button>
+    </div>
+    <div id="weatherInfo"></div>
+    <img id="weatherImage" src="" alt="Weather Image">
+    <script src="main.js"></script>
+</body>
+</html>
